@@ -43,7 +43,6 @@ function addPlanetDetails(planet, container) {
   details.classList.add(`planet-facts`);
   for(let detail of Object.keys(planet)){
     if(detail !== 'name' && detail !== `image`){
-      console.dir(detail);
       const displayDetail = document.createElement(`li`);
       displayDetail.textContent = `${detail}: ${planet[detail]}`
       details.appendChild(displayDetail);
